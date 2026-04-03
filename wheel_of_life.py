@@ -35,8 +35,8 @@ scores = {}
 for area in areas:
     scores[area] = st.slider(
         area,
-        min_value=0,
-        max_value=9,
+        min_value=1,
+        max_value=10,
         value=5
     )
 
