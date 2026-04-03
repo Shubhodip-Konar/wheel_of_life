@@ -79,6 +79,6 @@ st.subheader("🧾 Score Summary")
 st.dataframe(df, use_container_width=True)
 
 average_score = df["Score"].mean()
-st.metric("Overall Life Balance Score", f"{average_score:.2f} / 9")
+st.metric("Overall Life Balance Score", f"{average_score:.2f} / 10")
 
 st.caption("Built with Streamlit 🚀")
