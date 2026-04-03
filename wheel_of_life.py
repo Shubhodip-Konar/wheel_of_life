@@ -74,7 +74,7 @@ def plot_polar_wheel(scores_dict):
     # legends on the right side
     #axis settings
     ax.set_ylim(0, 10)
-    ax.set_yticks(range(1, 11))
+    ax.set_yticks([])
     ax.set_xticks([])
     ax.set_title("Your Life Balance", pad=20)
     ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), title="Life Areas")
