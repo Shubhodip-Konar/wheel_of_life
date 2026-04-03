@@ -77,7 +77,18 @@ def plot_polar_wheel(scores_dict):
     ax.set_yticks(range(1,11))
     ax.set_yticklabels([])
     ax.set_xticks([])
-    ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), fontsize=14, handlelength=2)
+    #ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), fontsize=14, handlelength=2)
+
+    #radial labels
+    label_radius = 10.5
+    for angle, label in zip(angles, labels):
+        rotation = np.degrees(angle)
+        if np.pi / 2 < angle < 3 * np.pi / 2:
+            rotation += 180
+            ha = "right"
+        else:
+            ha = "left"
+        ax.text(angle, label_radius,label,rotation=rotation,rotation_mode="anchor",ha=ha,va="center",fontsize=11)
     st.pyplot(fig)
 
 plot_polar_wheel(scores)
