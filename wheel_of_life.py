@@ -77,7 +77,7 @@ def plot_polar_wheel(scores_dict):
     ax.set_yticks(range(1,11))
     ax.set_yticklabels([])
     ax.set_xticks([])
-    ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), fontsize=14, labelspacing=1.2, handlelength=2)
+    ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), fontsize=14, handlelength=2)
     st.pyplot(fig)
 
 plot_polar_wheel(scores)
