@@ -33,7 +33,7 @@ colors = [
     "#2ca02c",  # Environment & Physical Well-Being (Green)
     "#ff7f0e",  # Career & Professional Fulfillment (Orange)
     "#d62728",  # Financial Security & Freedom (Red)
-    "#9467bd1",  # Family Life (Purple)
+    "#9467bd",  # Family Life (Purple)
     "#8c564b",  # Play, Creativity & Adventure (Brown)
     "#17becf",  # Personal Growth & Self-Development (Cyan)
     "#bcbd22",  # Purpose & Contribution (Olive)
