@@ -67,7 +67,7 @@ def plot_wheel_of_life(dataframe):
         labels
     )
 
-    ax.set_ylim(0, 9)
+    #ax.set_ylim(0, 9)
     ax.set_yticks(range(0, 10))
     ax.set_title("Your Life Balance", pad=20)
 
