@@ -55,7 +55,7 @@ df = pd.DataFrame(
     columns=["Life Area", "Score"]
 )
 
-st.subheader("📊 Wheel of Life Chart")
+st.subheader("📊 Wheel of Life")
 
 
 def plot_polar_wheel(scores_dict):
