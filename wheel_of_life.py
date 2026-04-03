@@ -28,6 +28,16 @@ areas = [
     "Purpose & Contribution",
     "Physical Well‑Being"
 ]
+colors = [
+    "#4E79A7",  # Emotional & Mental Well-Being (Blue)
+    "#59A14F",  # Environment & Physical Well-Being (Green)
+    "#F28E2B",  # Career & Professional Fulfillment (Orange)
+    "#E15759",  # Financial Security & Freedom (Red)
+    "#B07AA1",  # Family Life (Purple)
+    "#FF9DA7",  # Play, Creativity & Adventure (Pink)
+    "#76B7B2",  # Personal Growth & Self-Development (Teal)
+    "#EDC948",  # Purpose & Contribution (Yellow)
+]
 
 st.subheader("🎚️ Your Ratings")
 
@@ -59,7 +69,7 @@ def plot_polar_wheel(scores_dict):
     #start from top and go clockwise
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
-    bars = ax.bar(angles, values, width=width, bottom=0.0, edgecolor="black")
+    bars = ax.bar(angles, values, width=width, bottom=0.0, color=colors, edgecolor="black")
     
     # legends on the right side
     #axis settings
