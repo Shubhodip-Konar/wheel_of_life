@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🛞 Wheel of Life_Mind Your Trap")
+st.title("🛞 Wheel of Life Assessment")
 st.write("https://mindyourtrap.com/")
 st.write(
     "Rate each area of your life from **1 (very low)** to **10 (excellent)**."
@@ -55,9 +55,14 @@ def plot_polar_wheel(scores_dict):
     angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
     width = 2 * np.pi / N
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    
+    #start from top and go clockwise
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
     bars = ax.bar(angles, values, width=width, bottom=0.0, edgecolor="black")
+    
+    # legends on the right side
+    #axis settings
     ax.set_ylim(0, 10)
     ax.set_yticks(range(1, 11))
     ax.set_xticks([])
@@ -65,7 +70,7 @@ def plot_polar_wheel(scores_dict):
     ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), title="Life Areas")
     st.pyplot(fig)
 
-plot_polar_wheel(df)
+plot_polar_wheel(scores)
 
 st.subheader("🧾 Score Summary")
 st.dataframe(df, use_container_width=True)
