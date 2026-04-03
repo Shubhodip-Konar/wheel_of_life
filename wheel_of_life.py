@@ -47,33 +47,25 @@ df = pd.DataFrame(
 
 st.subheader("📊 Wheel of Life Chart")
 
-def plot_wheel_of_life(dataframe):
-    labels = dataframe["Life Area"].tolist()
-    scores = dataframe["Score"].tolist()
 
-    scores += scores[:1]
-    angles = np.linspace(
-        0, 2 * np.pi, len(labels) + 1, endpoint=True
-    )
-
-    fig = plt.figure(figsize=(7, 7))
-    ax = plt.subplot(111, polar=True)
-
-    ax.plot(angles, scores, linewidth=2)
-    ax.fill(angles, scores, alpha=0.25)
-
-    ax.set_thetagrids(
-        angles[:-1] * 180 / np.pi,
-        labels
-    )
-
-    ax.set_ylim(1, 10)
-    ax.set_yticks(range(0, 10))
+def plot_polar_wheel(scores_dict):
+    labels = list(scores_dict.keys())
+    values = list(scores_dict.values())
+    N = len(labels)
+    angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
+    width = 2 * np.pi / N
+    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    bars = ax.bar(angles, values, width=width, bottom=0.0, edgecolor="black")
+    ax.set_ylim(0, 10)
+    ax.set_yticks(range(1, 11))
+    ax.set_xticks([])
     ax.set_title("Your Life Balance", pad=20)
-
+    ax.legend(bars, labels, loc="center left", bbox_to_anchor=(1.1, 0.5), title="Life Areas")
     st.pyplot(fig)
 
-plot_wheel_of_life(df)
+plot_polar_wheel(df)
 
 st.subheader("🧾 Score Summary")
 st.dataframe(df, use_container_width=True)
