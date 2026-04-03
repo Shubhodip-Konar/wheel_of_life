@@ -8,7 +8,8 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🛞 Wheel of Life Mind Your Trap")
+st.title("🛞 Wheel of Life_Mind Your Trap")
+st.write("https://mindyourtrap.com/")
 st.write(
     "Rate each area of your life from **0 (very low)** to **9 (excellent)**."
 )
