@@ -29,14 +29,14 @@ areas = [
     "Physical Well‑Being"
 ]
 colors = [
-    "#4E79A7",  # Emotional & Mental Well-Being (Blue)
-    "#59A14F",  # Environment & Physical Well-Being (Green)
-    "#F28E2B",  # Career & Professional Fulfillment (Orange)
-    "#E15759",  # Financial Security & Freedom (Red)
-    "#B07AA1",  # Family Life (Purple)
-    "#FF9DA7",  # Play, Creativity & Adventure (Pink)
-    "#76B7B2",  # Personal Growth & Self-Development (Teal)
-    "#EDC948",  # Purpose & Contribution (Yellow)
+    "#1f77b4",  # Emotional & Mental Well-Being (Blue)
+    "#2ca02c",  # Environment & Physical Well-Being (Green)
+    "#ff7f0e",  # Career & Professional Fulfillment (Orange)
+    "#d62728",  # Financial Security & Freedom (Red)
+    "#9467bd1",  # Family Life (Purple)
+    "#8c564b",  # Play, Creativity & Adventure (Brown)
+    "#17becf",  # Personal Growth & Self-Development (Cyan)
+    "#bcbd22",  # Purpose & Contribution (Olive)
 ]
 
 st.subheader("🎚️ Your Ratings")
