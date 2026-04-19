@@ -53,10 +53,11 @@ SMTP_PORT = 587
  
 
 AREAS = [
+    "Health and Vitality",
+ 
+    "Emotional & Mental Well-Being",
 
-    "Emotional & Mental Well Being",
-
-    "Environment & Physical Well Being",
+    "Environment & Physical Surroundings",
 
     "Career & Professional Fulfillment",
 
@@ -68,15 +69,13 @@ AREAS = [
 
     "Friendships & Social Connection",
 
-    "Joy & Inner Peace",
-
     "Personal Growth & Self Development",
+
+    "Joy & Inner Peace",
 
     "Play, Creativity & Adventure",
 
-    "Purpose & Contribution",
-
-    "Physical Well Being"
+    "Purpose & Contribution"
 
 ]
 
