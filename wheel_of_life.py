@@ -612,7 +612,7 @@ if st.session_state.assessment_started and details_valid:
 
             st.session_state.submitted = True
 
-            st.success("Assessment submitted successfully. The wheel image has also been emailed.")
+            st.success("Assessment submitted successfully.")
 
         except Exception as e:
 
