@@ -441,7 +441,6 @@ st.title("🛞 Wheel of Life Assessment")
 
 st.write("https://mindyourtrap.com/")
 
-st.write("Rate each area of your life from **1 (very low)** to **10 (excellent)**.")
 
  
 
@@ -544,6 +543,7 @@ if not st.session_state.assessment_started:
 if st.session_state.assessment_started and details_valid:
 
     st.subheader("🎚️ Your Ratings")
+    st.write("Rate each area of your life from **1 (very low)** to **10 (excellent)**.")
 
  
 
